@@ -1,0 +1,31 @@
+body{
+    background-color: #0F172A;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+/*
+Fundo: #0F172A
+Cards: #1E293B
+Dourado: #FACC15
+Branco: #F8FAFC
+Cinza claro: #CBD5E1
+*/
+
+
+.teste{
+    color: aliceblue;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+/*personalização da navbar*/
+nav{
+    background-color: #CBD5E1;
+    min-height: 100px;
+}
+
+.container-inicio{
+    background-color: rgb(84, 50, 205);
+    min-height: 600px;
+}
