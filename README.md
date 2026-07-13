@@ -6,7 +6,7 @@ Projeto desenvolvido para a disciplina de **Programação Web I**.
 
 Este projeto tem como objetivo desenvolver uma página web responsiva com o tema **Lendas das Copas do Mundo**, apresentando alguns dos maiores jogadores da história do torneio.
 
-## 🚀 Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - HTML5
 - CSS3
