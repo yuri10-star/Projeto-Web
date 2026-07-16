@@ -38,7 +38,7 @@ nav{
 
 .container-inicio{
     margin-top: 100px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/pele.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/sectionInicio/pele.jpg');
     background-size: cover;
 
     min-height: 100vh;
