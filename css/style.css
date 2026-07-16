@@ -1,59 +1,88 @@
-body{
+/* Estilos gerais da página */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     background-color: #0F172A;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
 }
 
-/*
-Fundo: #0F172A
-Cards: #1E293B
-Dourado: #FACC15
-Branco: #F8FAFC
-Cinza claro: #CBD5E1
-*/
-
-/*personalização da navbar*/
-nav{
+/* Estilização da barra de navegação superior */
+nav {
     background-color: #c29e10;
     min-height: 100px;
 
     font-size: 20px;
-    
+
     color: white;
 }
 
-.link-git{
+.link-git {
     text-decoration: none;
     color: inherit;
 }
 
-.link-git:hover{
+.link-git:hover {
     color: black;
 }
 
 .nav-item .nav-link:hover {
-    color: #000000 !important; /* Força a cor preta */
+    color: #000000 !important;
+    /* Força a cor preta */
 }
 
+/*Estilização da barra de navegação superior*/
 
-.container-inicio{
-    margin-top: 100px;
+/* ---------------------------------------------------------------------------- */
+
+
+/* Estilização da seção inicial */
+/* PC */
+.container-inicio {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/sectionInicio/pele.jpg');
     background-size: cover;
-
     min-height: 100vh;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
 }
 
-#jogadores{
+.botaoJogadores:hover {
+    background-color: #947c1e;
+    border-color: #947c1e;
+}
+
+
+/* PC */
+
+/* Celular */
+@media (max-width: 991px) {
+    .container-inicio {
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+
+/* Celular */
+
+/* Estilização da seção inicial */
+
+
+/* ---------------------------------------------------------------------------- */
+
+
+/* Estilização da seção de jogadores */
+/* PC */
+#jogadores {
     color: white;
     background-color: #182441;
 }
-.card{
+
+.card {
     background-color: #151d29;
     color: white;
 
@@ -62,7 +91,7 @@ nav{
     border-radius: 15px;
 }
 
-.card img{
+.card img {
     width: 70%;
     height: 350px;
     object-fit: cover;
@@ -75,19 +104,176 @@ nav{
     margin-top: 20px;
 }
 
-#estatisticas{
+.jogadores-mobile {
+
+    display: none;
+
+}
+
+/* PC */
+
+/* Celular */
+@media(max-width:991px) {
+
+    .jogadores-desktop {
+        display: none;
+    }
+
+    .jogadores-mobile {
+        display: block;
+    }
+
+    .carousel-item {
+        padding: 20px;
+    }
+
+    .carousel-item .card {
+        max-width: 350px;
+        margin: auto;
+    }
+
+    .carousel-item .card {
+        max-width: 350px;
+        margin: auto;
+    }
+}
+
+/* Celular */
+/* Estilização da seção de jogadores */
+
+
+/* ---------------------------------------------------------------------------- */
+
+
+/* Estilização do container Estatisticas */
+
+#estatisticas {
     color: white;
     background-color: #1F3A5F;
 
     height: 80vh;
 }
 
-#estatisticas table{
+#estatisticas table {
     min-height: 400px;
 }
+/* PC */
 
-#curiosidades{
+/* Celular */
+@media (max-width: 991px) {
+    #estatisticas table {
+        min-height: 200px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px){
+
+    #estatisticas{
+        max-height: 600px;
+    }
+
+}
+/* Celular */
+/* Estilização do container Estatisticas */
+
+
+/* ---------------------------------------------------------------------------- */
+
+
+/* Estilização do container Curiosidades */
+/* PC */
+#curiosidades {
     color: white;
     background-color: #182441;
     min-height: 90vh;
+}
+
+.curiosidades-mobile {
+    display: none;
+}
+
+/* PC */
+
+/* Celular */
+@media (max-width:991px) {
+
+    .curiosidades-desktop {
+        display: none;
+    }
+
+    .curiosidades-mobile {
+        display: block;
+    }
+
+    .curiosidades-mobile .card {
+        max-width: 340px;
+        margin: auto;
+    }
+
+}
+
+@media (min-width:768px) and (max-width:991px){
+
+    #curiosidades{
+        min-height: auto;
+    }
+
+}
+/* Celular */
+
+/* Estilização do container Curiosidades */
+
+
+/* ---------------------------------------------------------------------------- */
+
+
+/* Estilização do rodapé */
+footer {
+    color: white;
+    min-height: 100px;
+}
+
+/* Estilização do rodapé */
+
+
+/* ---------------------------------------------------------------------------- */
+
+
+/* Estilo do botão flutuante para voltar ao topo */
+#btnTopo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    width: 55px;
+    height: 55px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #ffc107;
+    color: black;
+
+    font-size: 22px;
+    cursor: pointer;
+
+    z-index: 9999;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: .3s;
+}
+
+#btnTopo.ativo {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (min-width:992px) {
+
+    #btnTopo {
+        display: none;
+    }
+
 }
