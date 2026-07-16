@@ -32,6 +32,11 @@ Este projeto tem como objetivo desenvolver uma página web responsiva com o tema
 - estilização dos textos com links para alterar a coloração quando o mouse passar por cima
 - o texto "PROJETO WEB I" possui o link para o repositorio no github
 
+
+## Mudanças feitas no dia 15/07
+
+- Nova estruturação da página, modificações na section de jogadores, estatisticas e curiosidades. estrutura e estilização completa para implementação das imagens.
+
 ## Autor
 
 **Yuri Gabriel**

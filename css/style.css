@@ -48,3 +48,46 @@ nav{
     align-items: center;
     color: white;
 }
+
+#jogadores{
+    color: white;
+    background-color: #182441;
+}
+.card{
+    background-color: #151d29;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.card img{
+    width: 70%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 15px;
+
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#estatisticas{
+    color: white;
+    background-color: #1F3A5F;
+
+    height: 80vh;
+}
+
+#estatisticas table{
+    min-height: 400px;
+}
+
+#curiosidades{
+    color: white;
+    background-color: #182441;
+    min-height: 90vh;
+}
